@@ -69,7 +69,7 @@ function compareValue(a,v) {
     }
     clearInterval(timer); return;
   }
-  if(getValue(traversalList[a])==v) {
+  if(getValue(traversalList[a])==v && a!=0) {
     traversalList[a].style.backgroundColor="red"; counter++;
   }
   else {
